@@ -21,6 +21,9 @@ import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * 企业微信自动化登录实战
+ */
 public class ContactClassicTest {
 
     private static WebDriver driver;

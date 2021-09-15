@@ -42,7 +42,7 @@ public class Junit5Demo_1_1_Base {
     @Test
     public void countTest() throws InterruptedException {
         int result = Calculator.count(1);
-        result = Calculator.count(1);
+        result = Calculator.count(2);
         result = Calculator.count(1);
         result = Calculator.count(1);
         System.out.println(result);

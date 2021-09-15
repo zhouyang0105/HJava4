@@ -10,6 +10,8 @@ import com.util.Calculator;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.*;
 
+import java.io.IOException;
+
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -49,13 +51,15 @@ public class Junit5Demo_5_1_Allure {
         );
     }
     @Test
-    public void subTractTest(){
+    public void subTractTest()  {
         int result = Calculator.subtract(4,2);
-        System.out.println(result);
-        Allure.addAttachment("pic","image/png",this.getClass().getResourceAsStream("/Users/xiaolong/JavaWorkSpace/Hogwarts/junit5/live/Junit5Demo1104/src/main/resources/pic01.png"),".png");
-        assertEquals(2,result);
+        System.out.println("减法计算结果： "+result);
+        // Allure加载附件！！！
+        Allure.addAttachment("pic","image/png",this.getClass().getResourceAsStream("/pic01.png"),".png");
 
+        assertEquals(2,result);
     }
+
     @Test
     @Order(2)
     public void multiplyTest(){

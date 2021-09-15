@@ -23,8 +23,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  **/
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class Junit5Demo_2_1_AssertAll {
+    /**
+     * 进行优化：使用Junit5提供的 assertAll() 进行断言，增加了脚本的容错性
+     */
     @Test
-    @Order(1)
+    @Order(1) //控制测试用例执行顺序
     public void addTest(){
         int result01 = Calculator.add(4,2);
         System.out.println(result01);

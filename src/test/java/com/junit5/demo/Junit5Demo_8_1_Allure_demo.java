@@ -54,6 +54,7 @@ public class Junit5Demo_8_1_Allure_demo {
                 () -> assertEquals(2,result02)
         );
     }
+
     @Description("Description减法测试")
     @Story("Story减法测试")
     @DisplayName("DisplayName减法测试")

@@ -18,7 +18,7 @@ public class Calculator {
     public static int result =0;
 
     public static int add(int x,int y){
-        int result = x+y;
+        int result = x+y;  //result 方法内的局部变量
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -32,6 +32,8 @@ public class Calculator {
         result =i+x;
         return result;
     }
+
+    //多线程安全问题：加了同步锁 synchronized，防止多线程并发出错。 平衡性
     public synchronized static int synCount(int x) throws InterruptedException {
         int i =result;
         Thread.sleep(1000);

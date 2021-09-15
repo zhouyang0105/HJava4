@@ -11,6 +11,26 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**Junit5注释
+ * assertEquals(expected,actual) : 查看两个对象是否相等。类似于字符串比较实用的equals(）方法
+ * assertNotEquals(expected,actual): 查看两个对象是否不相等。
+ *
+ * assertNull（Object） : 查看对象是否为空
+ * assertNotNull（Object） :
+ *
+ * assertSame(expected,actual) : 查看两个对象的引用是否相等。类似使用"==" 比较两个对象
+ * assertNotSame(expected,actual)
+ *
+ * assertTrue(condition) : 查看运行结果是否为true
+ * assertNotTrue(condition) :
+ *
+ * assertArrayEquals(expected,actual) : 查看两个数组是否相等
+ *
+ * assertThat(actual,matcher) : 查看实际值是否满足指定条件。       引入第三方  借力 以插件方式引入
+ *
+ * fail() : 让测试失败
+ *
+ */
 
 /**
  * @version: V1.0
