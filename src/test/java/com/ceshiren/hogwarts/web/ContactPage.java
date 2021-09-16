@@ -36,7 +36,7 @@ public class ContactPage extends BasePage {
     }
 
     public String getPartyInfo(){
-        //
+        //打印内容
         String content = driver.findElement(parterInfo).getText();
         System.out.println(content);
         return content;

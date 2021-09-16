@@ -23,6 +23,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * 企业微信自动化登录实战
+ * PO代表业务的具体实现，case代表业务功能覆盖
  */
 public class ContactClassicTest {
 
